@@ -1,6 +1,6 @@
 // Load menus
 function loadMenu(type) {
-  let url = "http://localhost:8080/merger";
+  let url = "https://day22-latest.onrender.com/merger";
   if (type) url += `/${type}`;
   fetch(url)
     .then(res => res.json())
@@ -41,7 +41,7 @@ function setupSignupForm() {
         password: document.getElementById("password").value
       };
 
-      fetch("http://localhost:8080/merger/signup", {
+      fetch("https://day22-latest.onrender.com/signup", {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
