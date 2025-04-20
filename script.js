@@ -41,7 +41,7 @@ function setupSignupForm() {
         password: document.getElementById("password").value
       };
 
-      fetch("https://day22-latest.onrender.com/signup", {
+      fetch("https://day22-latest.onrender.com/merger/signup", {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
